@@ -19,3 +19,11 @@ $("#js-hamburger").click(function () {
   $(".hamburger").toggleClass("is__active");
   $(".hamburger__menu").toggleClass("is__open");
 });
+
+// const swiper = new Swiper(".swiper", {
+//   loop: true, 
+//   speed: 1500, 
+//   autoplay: { 
+//     delay: 1500, 
+//   },
+// });

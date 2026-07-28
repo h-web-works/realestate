@@ -8,10 +8,12 @@
   <meta name="robots" content="noindex">
   <link rel="icon" href="./img/favicon.ico">  
   <link rel="stylesheet" href="./css/reset.css">
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div id="container">
+    <!-- header -->
     <header class="header">
       <div class="inner">
         <div class="header__logo">
@@ -50,11 +52,44 @@
         </div>
       </div>
     </header>
-    <main class="main">      
+    <!-- main -->
+    <main class="main">
+      <!-- fv -->
+      <div class="fv">
+        <div class="swiper fv__image">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide fv__slide">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/fv/fv_01.jpg">
+                <img src="./img/fv/fv_01_sp.jpg" alt="白い屋根に黒い壁の平屋の一軒家">
+              </picture>
+            </div>
+            <div class="swiper-slide fv__slide">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/fv/fv_02.jpg">
+                <img src="./img/fv/fv_02_sp.jpg" alt="茅葺き屋根の古民家3軒とその背景にある緑の山と青空">
+              </picture>
+            </div>
+            <div class="swiper-slide fv__slide">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/fv/fv_03.jpg">
+                <img src="./img/fv/fv_03_sp.jpg" alt="白い屋根に黒い壁の平屋の一軒家">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="fv__contents">
+          <div class="fv__catch">
+            <h2>永遠も。<br class="sp">瞬間も。<br>あなたと共に。</h2>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
     </footer>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>

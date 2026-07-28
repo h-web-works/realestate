@@ -43,10 +43,6 @@ common
   }
 }
 
-.main {
-  margin-top: 8rem;
-}
-
 header {
   padding-inline: 3rem;
 }
@@ -232,3 +228,49 @@ header
   }
 }
 
+/* ----------
+header
+---------- */
+
+.fv {
+  position: relative;
+}
+
+.fv__slide img {
+  aspect-ratio: 1080 / 800;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .fv__slide img {
+    aspect-ratio: 375 / 601;
+  }
+}
+
+.fv__contents {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  padding-top: calc(9 / 1080 * 100%);
+  padding-left: calc(1 / 1080 * 100%);
+
+  h2 {
+    color: var(--font-color-appearance);
+    font-size: calc(40 / 1080 * 100vw);
+    line-height: calc(70 / 40);
+    font-weight: 600;
+  }
+}
+@media (max-width: 767px) {
+  .fv__contents {
+    padding-top: calc(8.5 / 375 * 100%);
+    padding-left: calc(0.5 / 375 * 100%);
+    h2 {
+      font-size: calc(30 / 375 * 100vw);
+      line-height: calc(60 / 30);
+    }
+  }
+}
