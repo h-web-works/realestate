@@ -53,15 +53,6 @@ header {
     padding-right: 0;
   }
 }
-section, .footer {
-  padding-inline: 3rem;
-}
-
-@media (max-width: 767px) {
-  section, .footer {
-    padding-inline: 2rem;
-  }
-}
 img {
   width: 100%;
   height: auto;
@@ -287,5 +278,87 @@ header
   .fv__contents h2 {
     font-size: 8vw;
     line-height: 2;
+  }
+}
+/* ----------
+about
+---------- */
+.about {
+  position: relative;
+}
+
+.about__image img {
+  aspect-ratio: 1080/500;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .about__image img {
+    aspect-ratio: 375/584;
+  }
+}
+.about__contents {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.about__catch {
+  position: absolute;
+  top: 10.1851851852vw;
+  right: 40.5555555556vw;
+}
+.about__catch h3 {
+  font-size: 2.7777777778vw;
+  line-height: 1.6666666667;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.about__catch .about__catch-text {
+  font-size: 1.6666666667vw;
+  margin-right: 5.5555555556vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.3888888889vw;
+}
+
+@media (max-width: 767px) {
+  .about__catch {
+    top: 13.3333333333vw;
+    right: 8vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__catch h3 {
+    font-size: 6.6666666667vw;
+    font-weight: 400;
+    margin-bottom: 6.4vw;
+  }
+  .about__catch .about__catch-text {
+    font-size: 4.2666666667vw;
+    margin-right: 5.5555555556vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 1.3888888889vw;
   }
 }/*# sourceMappingURL=style.css.map */
