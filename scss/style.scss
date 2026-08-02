@@ -53,14 +53,18 @@ header {
   }
 }
 
-// section, .footer {
-//   padding-inline: 3rem;
-// }
-// @media (max-width: 767px) {
-//   section, .footer {
-//     padding-inline: 2rem;
-//   }
-// }
+.section-padding__inline, .footer {
+  padding-inline: 3rem;
+}
+
+.section-padding__block {
+  padding-block: 8rem;
+}
+@media (max-width: 767px) {
+  .section-padding__block {
+    padding-block: 5rem;
+  }
+}
 
 img {
   width: 100%;
@@ -72,6 +76,28 @@ img {
   max-width: 88rem;
   margin-inline: auto;
 }
+
+.section-title {
+  text-align: center;
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6rem;
+  }
+}
+
+.section-title__en {
+  font-size: 3rem;
+  line-height: calc(33 / 30);
+  color: var(--theme-color);
+}
+
+.section-title__ja {
+  font-size: 2rem;
+  line-height: calc(33 / 20);
+}
+
 
 /* ----------
 header
@@ -341,11 +367,154 @@ about
 
     .about__catch-text {
       font-size: calc(16 / 375 * 100vw);
-      margin-right: calc(60 / 1080 * 100vw);
+      margin-right: calc(60 / 375 * 100vw);
       display: flex;
       flex-direction: column;
-      row-gap: calc(15 / 1080 * 100vw);
+      row-gap: calc(15 / 375 * 100vw);
     }
 
   }
+}
+
+/* ----------
+service
+---------- */
+.service {
+  background: var(--theme-color-section-background);
+}
+
+.service__contents {
+  margin-top: calc(68 / 1080 * 100vw);
+}
+
+.service-item {
+  position: relative;
+
+  &:not(:first-child) {
+    margin-top: calc(131 / 1080 * 100vw);
+  }
+
+  &:nth-child(even) {
+    .service-item__image {
+      margin-left: auto;
+    }
+    .service-item__image__caption {
+      text-align: right;
+    }
+
+    .service-item__textarea {
+      position: absolute;
+      top: calc(145 / 1080 * 100vw);
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-left: calc(40 / 1080 * 100vw);
+      padding-right: 0;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .service-item {
+    position: static;
+
+    &:not(:first-child) {
+      margin-top: calc(50 / 375  * 100vw);
+    }
+
+    &:nth-child(even) {
+      .service-item__image {
+        margin-left: auto;
+      }
+      .service-item__image__caption {
+        text-align: right;
+      }
+
+      .service-item__textarea {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: calc(20 / 375 * 100vw);
+      }
+    }
+  }
+}
+
+.service-item__image {
+  width: calc(600 / 1080 * 100vw);
+  height: calc(300 / 1080 * 100vw);
+  position: relative;
+  z-index: 10;
+}
+@media (max-width: 767px) {
+  .service-item__image {
+    width: 100%;
+    height: calc(220 / 375 * 100vw);
+  }
+}
+
+.service-item__image__caption {
+  margin-top: calc(19 / 1080 * 100vw);
+  font-size: calc(16 / 1080 * 100vw);
+  line-height: calc(25 / 16);
+}
+@media (max-width: 767px) {
+  .service-item__image__caption {
+    margin-top: calc(5 / 375 * 100vw);
+    margin-bottom: calc(6 / 375 * 100vw);
+    font-size: calc(16 / 375 * 100vw);
+  }
+}
+
+.service-item__textarea {
+  background: var(--theme-color);
+  width: calc(500 / 1080 * 100vw);
+  height: calc(250 / 1080 * 100vw);
+  color: var(--font-color-appearance);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-top: calc(50 / 1080 * 100vw);
+  padding-right: calc(27 / 1080 * 100vw);
+  position: absolute;
+  top: calc(145 / 1080 * 100vw);
+  right: 0;
+  z-index: 1;
+  h3 {
+    font-size: calc(25 / 1080 * 100vw);
+    line-height: calc(33 / 25);
+  }
+  p {
+    margin-top: calc(17 / 1080 * 100vw);
+    font-size: calc(16 / 1080 * 100vw);
+    line-height: calc(25 / 16);
+  }
+}
+@media (max-width: 767px) {
+  .service-item__textarea {
+    background: var(--theme-color);
+    width: 100%;
+    height: calc(171 / 375 * 100vw);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: calc(20 / 375 * 100vw);
+    padding-left: calc(20 / 375 * 100vw);
+    padding-right: 0;
+    position: static;
+    h3 {
+      font-size: calc(20 / 375 * 100vw);
+      line-height: calc(25 / 20);
+    }
+    p {
+      margin-top: calc(14 / 375 * 100vw);
+      font-size: calc(16 / 375 * 100vw);
+    }
+  }
+}
+
+.service-item__textarea__adjustment {
+  text-align: left;
 }
