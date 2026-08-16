@@ -9,6 +9,7 @@
   <link rel="icon" href="./img/favicon.ico">  
   <link rel="stylesheet" href="./css/reset.css">
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <link href="https://use.fontawesome.com/releases/v7.0.0/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -83,6 +84,12 @@
             <h2>永遠も。<br class="sp">瞬間も。<br>あなたと共に。</h2>
           </div>
         </div>
+      </div>
+      <!-- page to top -->
+      <div class="to__top">
+        <a href="#top">
+          <i class="fa-solid fa-chevron-up"></i>
+        </a>
       </div>
       <!-- about -->
       <section class="about" id="about">
@@ -173,12 +180,125 @@
               </div>
             </div> 
           </div>
-
+        </div>
+      </section>
+      <!-- works -->
+      <section class="works section-padding__inline section-padding__block" id="works">
+        <div class="inner">
+          <div class="about__title section-title">
+            <h2>
+              <span class="about__title__en section-title__en" aria-hidden="true">WORKS</span>
+              <span class="about__title__ja section-title__ja">施工事例</span>
+            </h2>
+          </div>
+          <div class="works__contents">
+            <div class="works__items">
+              <div class="works__item works-item">
+                <div class="works-item__image modal-open" data-modal="modal-01">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/works/works_01.jpg">
+                    <img src="./img/works/works_01_sp.jpg" alt="黒い屋根に黒い壁の二階建ての一軒家と白い門">
+                  </picture>
+                </div>
+                <div class="works-item__textarea modal-open" data-modal="modal-01">
+                  <p>【新築】<br class="pc">長崎県T.O様自宅</p>
+                </div>
+              </div>
+              <div class="works__item works-item">
+                <div class="works-item__image modal-open" data-modal="modal-02">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/works/works_02.jpg">
+                    <img src="./img/works/works_02_sp.jpg" alt="白い壁の緑に囲まれた教会">
+                  </picture>
+                </div>
+                <div class="works-item__textarea modal-open" data-modal="modal-02">
+                  <p>【リノベーション】<br class="pc">京都府カトリック丹波教会</p>
+                </div>
+              </div>
+              <div class="works__item works-item">
+                <div class="works-item__image modal-open" data-modal="modal-03">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/works/works_03.jpg">
+                    <img src="./img/works/works_03_sp.jpg" alt="濃淡2色のベージュの壁の二階建ての一軒家と黒い車">
+                  </picture>
+                </div>
+                <div class="works-item__textarea modal-open" data-modal="modal-03">
+                  <p>【新築】<br class="pc">東京都A.F様自宅件事務所</p>
+                </div>
+              </div>
+              <div class="works__item works-item">
+                <div class="works-item__image modal-open" data-modal="modal-04">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/works/works_04.jpg">
+                    <img src="./img/works/works_04_sp.jpg" alt="複数の橋がかけられた川とその周辺に立ち並ぶ温泉宿">
+                  </picture>
+                </div>
+                <div class="works-item__textarea modal-open" data-modal="modal-04">
+                  <p>【都市開発】<br class="pc">山形県銀山温泉協同組合</p>
+                </div>
+              </div>
+            </div>
+            <div class="works__modals">
+              <div class="works__modal works-modal" id="modal-01">
+                <div class="works-modal__outerframe">
+                  <div class="works-modal__close"></div>
+                  <div class="works-modal__image">
+                    <picture>
+                      <img src="./img/works/works_01_modal.jpg" alt="黒い屋根に黒い壁の二階建ての一軒家と白い門">
+                    </picture>
+                  </div>
+                  <div class="works-modal__textarea">
+                    <p>【新築】長崎県T.O様自宅</p>
+                  </div>
+                </div>
+              </div>
+              <div class="works__modal works-modal" id="modal-02">
+                <div class="works-modal__outerframe">
+                  <div class="works-modal__close"></div>
+                  <div class="works-modal__image">
+                    <picture>
+                      <img src="./img/works/works_02_modal.jpg" alt="白い壁の緑に囲まれた教会">
+                    </picture>
+                  </div>
+                  <div class="works-modal__textarea">
+                    <p>【リノベーション】京都府カトリック丹波教会</p>
+                  </div>
+                </div>
+              </div>
+              <div class="works__modal works-modal" id="modal-03">
+                <div class="works-modal__outerframe">
+                  <div class="works-modal__close"></div>
+                  <div class="works-modal__image">
+                    <picture>
+                      <img src="./img/works/works_03_modal.jpg" alt="濃淡2色のベージュの壁の二階建ての一軒家と黒い車">
+                    </picture>
+                  </div>
+                  <div class="works-modal__textarea">
+                    <p>【新築】東京都A.F様自宅件事務所</p>
+                  </div>
+                </div>
+              </div>
+              <div class="works__modal works-modal" id="modal-04">
+                <div class="works-modal__outerframe">
+                  <div class="works-modal__close"></div>
+                  <div class="works-modal__image">
+                    <picture>
+                      <img src="./img/works/works_04_modal.jpg" alt="複数の橋がかけられた川とその周辺に立ち並ぶ温泉宿">
+                    </picture>
+                  </div>
+                  <div class="works-modal__textarea">
+                    <p>【都市開発】山形県銀山温泉協同組合</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer>
     </footer>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
