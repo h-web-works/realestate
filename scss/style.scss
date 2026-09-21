@@ -54,7 +54,7 @@ header {
   }
 }
 
-.section-padding__inline, .footer {
+.section-padding__inline {
   padding-inline: 3rem;
 }
 
@@ -71,6 +71,15 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+a {
+  transition: opacity 0.4s;
+}
+@media (min-width: 768px) and (any-hover: hover) {
+  a:hover {
+    opacity: 0.7;
+  }
 }
 
 .inner {
@@ -1336,5 +1345,102 @@ input[type="checkbox"] {
   .contact__button {
     margin-top: 5rem;
     width: 100%;
+  }
+}
+
+/* ----------
+footer
+---------- */
+.footer {
+  .footer__padding-inline {
+    padding-inline: 3rem;
+  }
+
+  .inner {
+    max-width: 72.2rem;
+  }
+}
+
+.footer__contents {
+  padding-block: 8rem;
+
+  h2 {
+    padding-bottom: 2.8rem;
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+    text-align: center;
+    border-bottom: 0.1rem solid var(--font-color-description);
+  }
+}
+@media (max-width: 767px) {
+  .footer__contents {
+    padding: 5rem 3rem;
+  }
+
+  h2 {
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid var(--font-color-description);
+  }
+}
+
+.footer__section {
+  margin-top: 2.8rem;
+}
+@media (max-width: 767px) {
+  .footer__section {
+    margin-top: 2rem;
+  }
+}
+
+.footer-section__lists {
+  display: flex;
+  justify-content: center;
+  column-gap: 5rem;
+}
+@media (max-width: 800px) {
+  .footer-section__lists {
+    column-gap: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section__lists {
+    column-gap: 3rem;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-section__list {
+  font-size: 1.8rem;
+  line-height: calc(33 / 18);
+}
+
+.footer__sns {
+  margin-top: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+}
+@media (max-width: 767px) {
+  .footer__sns {
+    margin-top: 3.2rem;
+  }
+}
+
+.footer__copyright {
+  background: var(--theme-color);
+  font-size: 2rem;
+  line-height: calc(33 / 20);
+  color: var(--font-color-appearance);
+  text-align: center;
+  padding-block: 3rem;
+  span {
+    display: inline-block;
+  }
+}
+@media (max-width: 767px) {
+  .footer__copyright {
+    line-height: calc(25 / 20);
+    padding: 2.1rem 3rem;
   }
 }
