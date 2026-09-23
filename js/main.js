@@ -1,12 +1,15 @@
+var toTop = $(".to__top");
+toTop.hide();
+
 $(window).on("scroll", function () {
   const aboutHeight = $(".about").offset().top;
 
   if ($(window).scrollTop() > aboutHeight) {
     $(".header").addClass("is__scrolled");
-    $(".to__top").addClass("is__show");
+    toTop.fadeIn(400);
   } else {
     $(".header").removeClass("is__scrolled");
-    $(".to__top").removeClass("is__show");
+    toTop.fadeOut(400);
   }
 });
 
@@ -28,12 +31,14 @@ $(".modal-open").click(function() {
     const modal = $("#" + target);
     modal.show();
     $("body").addClass("is__modal-open");
+    $(".to__top").addClass("hide__by__modal");
   }
 );
 
 $(".works-modal__close").click(function() {
     $(this).closest(".works-modal").hide();
     $("body").removeClass("is__modal-open");
+    $(".to__top").removeClass("hide__by__modal");
   }
 );
 
@@ -41,6 +46,7 @@ $(".works-modal").click(function(event) {
   if ($(event.target).is(".works-modal")) {
     $(this).hide();
     $("body").removeClass("is__modal-open");  
+    $(".to__top").removeClass("hide__by__modal");
   }
 });
 
