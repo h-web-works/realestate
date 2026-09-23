@@ -18,13 +18,13 @@ $("#js-hamburger").click(function () {
   $(".hamburger__menu").toggleClass("is__open");
 });
 
-// const swiper = new Swiper(".swiper", {
-//   loop: true, 
-//   speed: 1500, 
-//   autoplay: { 
-//     delay: 1500, 
-//   },
-// });
+const swiper = new Swiper(".swiper", {
+  loop: true, 
+  speed: 1500, 
+  autoplay: { 
+    delay: 1500, 
+  },
+});
 
 $(".modal-open").click(function() {
     const target = $(this).data("modal");
