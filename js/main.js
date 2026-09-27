@@ -18,6 +18,12 @@ $("#js-hamburger").click(function () {
   $(".hamburger__menu").toggleClass("is__open");
 });
 
+$(".hamburger__menu nav li").click(function () {
+  $(".hamburger").toggleClass("is__active");
+  $(".hamburger__menu").toggleClass("is__open");
+});
+
+
 const swiper = new Swiper(".swiper", {
   loop: true, 
   speed: 1500, 
