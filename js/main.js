@@ -1,15 +1,14 @@
 var toTop = $(".to__top");
-toTop.hide();
 
 $(window).on("scroll", function () {
-  const aboutHeight = $(".about").offset().top;
+  const aboutHeight = $(".fv").offset().top;
 
   if ($(window).scrollTop() > aboutHeight) {
     $(".header").addClass("is__scrolled");
-    toTop.fadeIn(400);
+    toTop.addClass("is__show");
   } else {
     $(".header").removeClass("is__scrolled");
-    toTop.fadeOut(400);
+    toTop.removeClass("is__show");
   }
 });
 
@@ -35,14 +34,14 @@ const swiper = new Swiper(".swiper", {
 $(".modal-open").click(function() {
     const target = $(this).data("modal");
     const modal = $("#" + target);
-    modal.show();
+    modal.fadeIn();
     $("body").addClass("is__modal-open");
     $(".to__top").addClass("hide__by__modal");
   }
 );
 
 $(".works-modal__close").click(function() {
-    $(this).closest(".works-modal").hide();
+    $(this).closest(".works-modal").fadeOut();
     $("body").removeClass("is__modal-open");
     $(".to__top").removeClass("hide__by__modal");
   }
@@ -50,9 +49,12 @@ $(".works-modal__close").click(function() {
 
 $(".works-modal").click(function(event) {
   if ($(event.target).is(".works-modal")) {
-    $(this).hide();
+    $(this).fadeOut();
     $("body").removeClass("is__modal-open");  
     $(".to__top").removeClass("hide__by__modal");
   }
 });
 
+AOS.init({
+  once: true,
+});

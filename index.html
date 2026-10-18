@@ -6,12 +6,13 @@
   <title>株式会社北村建設興業</title>
   <meta name="description" content="株式会社北村建設興業は伝統とイマを繋ぐ、新たな技術革新を起こし続ける会社です。">
   <meta name="robots" content="noindex">
+  <meta name="format-detection" content="telephone=no">
   <link rel="icon" href="./img/favicon.ico">  
   <link rel="stylesheet" href="./css/reset.css">
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   <link href="https://use.fontawesome.com/releases/v7.0.0/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div id="container">
@@ -35,11 +36,13 @@
             </ul>
           </nav>
         </div>
-        <button id="js-hamburger" class="hamburger sp">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div id="js-hamburger" class="hamburger sp">
+          <div class="humburger__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
         <div class="hamburger__menu sp">
           <nav>
             <ul>
@@ -87,11 +90,11 @@
         </div>
       </div>
       <!-- page to top -->
-      <div class="to__top">
-        <a href="#top">
+      <a href="#top" class="to__top">
+        <div class="to__top__icon">
           <img src="./img/totop/icon-to-top.svg" alt="トップページへ戻る">
-        </a>
-      </div>
+        </div>
+      </a>
       <!-- about -->
       <section class="about" id="about">
         <div class="about__image">
@@ -101,9 +104,9 @@
           </picture>
         </div>
         <div class="about__contents">
-          <div class="about__catch">
-            <h2 data-aos="fade">伝統とイマを繋ぐ</h2>
-            <div class="about__catch-text" data-aos="fade">
+          <div class="about__catch" data-aos="fade">
+            <h2>伝統とイマを繋ぐ</h2>
+            <div class="about__catch-text">
               <p>古来から伝わる伝統文化<br>
                 昔からそこにある材料<br>
                 その土地に長い間かけて<br>
@@ -120,7 +123,7 @@
       <!-- service -->
       <section class="service section-theme__color section-padding__inline section-padding__block" id="service">
         <div class="inner">
-          <div class="service__title section-title">
+          <div class="service__title section-title" data-aos="fade">
             <h2>
               <span class="about__title__en section-title__en" aria-hidden="true">SERVICE</span>
               <span class="about__title__ja section-title__ja">サービス</span>
@@ -128,54 +131,54 @@
           </div>
           <div class="service__contents">
             <div class="service__items">
-              <div class="service__item service-item">
-                <div class="service-item__image" data-aos="fade">
+              <div class="service__item service-item" data-aos="fade">
+                <div class="service-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/service/service_01.jpg">
                     <img src="./img/service/service_01_sp.jpg" alt="黒い屋根に黒い壁の二階建ての一軒家と併設されている駐車場に停車している青色の車">
                   </picture>
-                </div>
-                <div class="service-item__image__caption" data-aos="fade">
-                  <p>静岡県U.I様自宅</p>
+                  <div class="service-item__image__caption">
+                    <p>静岡県U.I様自宅</p>
+                  </div>
                 </div>
                 <div class="service-item__textarea">
                   <div class="service-item__textarea__adjustment">
-                    <h3 data-aos="fade">新築<br class="pc">（土地探し〜建築）</h3>
-                    <p data-aos="fade">土地探しから建築、施工まで<br>サポートいたします。<br>風水的観点からもご提案。</p>
+                    <h3>新築<br class="pc">（土地探し〜建築）</h3>
+                    <p>土地探しから建築、施工まで<br>サポートいたします。<br>風水的観点からもご提案。</p>
                   </div>
                 </div>
               </div>
-              <div class="service__item service-item">
-                <div class="service-item__image" data-aos="fade">
+              <div class="service__item service-item" data-aos="fade">
+                <div class="service-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/service/service_02.jpg">
                     <img src="./img/service/service_02_sp.jpg" alt="木目調の平屋一軒家の建物">
                   </picture>
-                </div>
-                <div class="service-item__image__caption" data-aos="fade">
-                  <p>北海道富良野市ブックカフェ</p>
+                  <div class="service-item__image__caption">
+                    <p>北海道富良野市ブックカフェ</p>
+                  </div>
                 </div>
                 <div class="service-item__textarea">
                   <div class="service-item__textarea__adjustment">
-                    <h3 data-aos="fade">リフォーム<br>リノベーション</h3>
-                    <p data-aos="fade">温かみと雰囲気をそのままに<br>住み心地、使い心地を<br>追求しご提供いたします。</p>
+                    <h3>リフォーム<br>リノベーション</h3>
+                    <p>温かみと雰囲気をそのままに<br>住み心地、使い心地を<br>追求しご提供いたします。</p>
                   </div>
                 </div>
               </div>
-              <div class="service__item service-item">
-                <div class="service-item__image" data-aos="fade">
+              <div class="service__item service-item" data-aos="fade">
+                <div class="service-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/service/service_03.jpg">
                     <img src="./img/service/service_03_sp.jpg" alt="昔ながらの家が立ち並ぶ通り">
                   </picture>
-                </div>
-                <div class="service-item__image__caption" data-aos="fade">
-                  <p>広島県竹原市</p>
+                  <div class="service-item__image__caption">
+                    <p>広島県竹原市</p>
+                  </div>
                 </div>
                 <div class="service-item__textarea">
-                  <div class="service-item__textarea__adjustment" data-aos="fade">
-                    <h3 data-aos="fade">都市計画〜開発<br>公共施設</h3>
-                    <p data-aos="fade">都市計画から都市開発まで<br>ご提案いたします。<br>公共施設もさらに居心地良く。</p>
+                  <div class="service-item__textarea__adjustment">
+                    <h3>都市計画〜開発<br>公共施設</h3>
+                    <p>都市計画から都市開発まで<br>ご提案いたします。<br>公共施設もさらに居心地良く。</p>
                   </div>
                 </div>
               </div>
@@ -186,7 +189,7 @@
       <!-- works -->
       <section class="works section-padding__inline section-padding__block" id="works">
         <div class="inner">
-          <div class="works__title section-title">
+          <div class="works__title section-title" data-aos="fade">
             <h2>
               <span class="works__title__en section-title__en" aria-hidden="true">WORKS</span>
               <span class="works__title__ja section-title__ja">施工事例</span>
@@ -194,47 +197,47 @@
           </div>
           <div class="works__contents">
             <div class="works__items">
-              <div class="works__item works-item modal-open" data-modal="modal-01">
-                <div class="works-item__image" data-aos="fade">
+              <div class="works__item works-item modal-open" data-modal="modal-01" data-aos="fade">
+                <div class="works-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/works/works_01.jpg">
                     <img src="./img/works/works_01_sp.jpg" alt="黒い屋根に黒い壁の二階建ての一軒家と白い門">
                   </picture>
                 </div>
                 <div class="works-item__textarea">
-                  <p data-aos="fade">【新築】<br class="pc">長崎県T.O様自宅</p>
+                  <p>【新築】<br class="pc">長崎県T.O様自宅</p>
                 </div>
               </div>
-              <div class="works__item works-item modal-open" data-modal="modal-02" >
-                <div class="works-item__image" data-aos="fade">
+              <div class="works__item works-item modal-open" data-modal="modal-02" data-aos="fade">
+                <div class="works-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/works/works_02.jpg">
                     <img src="./img/works/works_02_sp.jpg" alt="白い壁の緑に囲まれた教会">
                   </picture>
                 </div>
-                <div class="works-item__textarea" data-aos="fade">
+                <div class="works-item__textarea">
                   <p>【リノベーション】<br>京都府カトリック丹波教会</p>
                 </div>
               </div>
-              <div class="works__item works-item modal-open" data-modal="modal-03">
-                <div class="works-item__image" data-aos="fade">
+              <div class="works__item works-item modal-open" data-modal="modal-03" data-aos="fade">
+                <div class="works-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/works/works_03.jpg">
                     <img src="./img/works/works_03_sp.jpg" alt="濃淡2色のベージュの壁の二階建ての一軒家と黒い車">
                   </picture>
                 </div>
-                <div class="works-item__textarea" data-aos="fade">
-                  <p>【新築】<br>東京都A.F様自宅件事務所</p>
+                <div class="works-item__textarea">
+                  <p>【新築】<br>東京都A.F様自宅兼事務所</p>
                 </div>
               </div>
-              <div class="works__item works-item modal-open" data-modal="modal-04">
-                <div class="works-item__image" data-aos="fade">
+              <div class="works__item works-item modal-open" data-modal="modal-04" data-aos="fade">
+                <div class="works-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/works/works_04.jpg">
                     <img src="./img/works/works_04_sp.jpg" alt="複数の橋がかけられた川とその周辺に立ち並ぶ温泉宿">
                   </picture>
                 </div>
-                <div class="works-item__textarea" data-aos="fade">
+                <div class="works-item__textarea">
                   <p>【都市開発】<br>山形県銀山温泉協同組合</p>
                 </div>
               </div>
@@ -244,9 +247,7 @@
                 <div class="works-modal__outerframe">
                   <div class="works-modal__close"></div>
                   <div class="works-modal__image">
-                    <picture>
-                      <img src="./img/works/works_01_modal.jpg" alt="黒い屋根に黒い壁の二階建ての一軒家と白い門">
-                    </picture>
+                    <img src="./img/works/works_01_modal.jpg" alt="黒い屋根に黒い壁の二階建ての一軒家と白い門">
                   </div>
                   <div class="works-modal__textarea">
                     <p>【新築】長崎県T.O様自宅</p>
@@ -257,9 +258,7 @@
                 <div class="works-modal__outerframe">
                   <div class="works-modal__close"></div>
                   <div class="works-modal__image">
-                    <picture>
-                      <img src="./img/works/works_02_modal.jpg" alt="白い壁の緑に囲まれた教会">
-                    </picture>
+                    <img src="./img/works/works_02_modal.jpg" alt="白い壁の緑に囲まれた教会">
                   </div>
                   <div class="works-modal__textarea">
                     <p>【リノベーション】京都府カトリック丹波教会</p>
@@ -270,12 +269,10 @@
                 <div class="works-modal__outerframe">
                   <div class="works-modal__close"></div>
                   <div class="works-modal__image">
-                    <picture>
-                      <img src="./img/works/works_03_modal.jpg" alt="濃淡2色のベージュの壁の二階建ての一軒家と黒い車">
-                    </picture>
+                    <img src="./img/works/works_03_modal.jpg" alt="濃淡2色のベージュの壁の二階建ての一軒家と黒い車">
                   </div>
                   <div class="works-modal__textarea">
-                    <p>【新築】東京都A.F様自宅件事務所</p>
+                    <p>【新築】東京都A.F様自宅兼事務所</p>
                   </div>
                 </div>
               </div>
@@ -283,9 +280,7 @@
                 <div class="works-modal__outerframe">
                   <div class="works-modal__close"></div>
                   <div class="works-modal__image">
-                    <picture>
-                      <img src="./img/works/works_04_modal.jpg" alt="複数の橋がかけられた川とその周辺に立ち並ぶ温泉宿">
-                    </picture>
+                    <img src="./img/works/works_04_modal.jpg" alt="複数の橋がかけられた川とその周辺に立ち並ぶ温泉宿">
                   </div>
                   <div class="works-modal__textarea">
                     <p>【都市開発】山形県銀山温泉協同組合</p>
@@ -299,67 +294,77 @@
       <!-- news -->
       <section class="news section-theme__color section-padding__inline section-padding__block" id="news">
         <div class="inner">
-          <div class="news__title section-title">
+          <div class="news__title section-title" data-aos="fade">
             <h2>
               <span class="news__title__en section-title__en" aria-hidden="true">NEWS</span>
               <span class="news__title__ja section-title__ja">お知らせ</span>
             </h2>
           </div>
           <div class="news__contents">
-            <div class="news__content news-content">
+            <div class="news__content news-content" data-aos="fade">
               <div class="news-content__title">
                 <h3>お知らせ</h3>
               </div>
               <ul class="news-content__lineups">
-                <li class="news-content__lineup" data-aos="fade">
+                <li class="news-content__lineup">
                   <a href="#">
                     <time datetime="2026-01">0000.00</time>
                     <p>公式Instagram、YouTubeはじめました。</p>
                   </a>
                 </li>
-                <li class="news-content__lineup" data-aos="fade">
+                <li class="news-content__lineup">
                   <a href="#">
                     <time datetime="2026-01">0000.00</time>
                     <p>非住宅 木造建築フェアに出展します。</p>
                   </a>
                 </li>
-                <li class="news-content__lineup" data-aos="fade">
+                <li class="news-content__lineup">
                   <a href="#">
                     <time datetime="2026-01">0000.00</time>
                     <p>公式ホームページがリニューアルしました。</p>
                   </a>
                 </li>
               </ul>
-              <div class="news-content__link" data-aos="fade">
-                <a href="#">more</a>
+              <div class="news-content__link">
+                <a href="#">
+                  <span>more</span>
+                  <span class="arrow">
+                    <span></span>
+                  </span>
+                </a>
               </div>
             </div>
-            <div class="news__content news-content">
+            <div class="news__content news-content" data-aos="fade">
               <div class="news-content__title">
                 <h3>ブログ</h3>
               </div>
               <ul class="news-content__lineups">
-                <li class="news-content__lineup" data-aos="fade">
+                <li class="news-content__lineup">
                   <a href="#">
                     <time datetime="2026-01">0000.00</time>
                     <p>あけましておめでとうございます。〜会長から社員まで〜</p>
                   </a>
                 </li>
-                <li class="news-content__lineup" data-aos="fade">
+                <li class="news-content__lineup">
                   <a href="#">
                     <time datetime="2026-01">0000.00</time>
                     <p>【検証】土地と人に相性はあるのか？</p>
                   </a>
                 </li>
-                <li class="news-content__lineup" data-aos="fade">
+                <li class="news-content__lineup">
                   <a href="#">
                     <time datetime="2026-01">0000.00</time>
                     <p>弊社創業初の入社式が行われました。</p>
                   </a>
                 </li>
               </ul>
-              <div class="news-content__link" data-aos="fade">
-                <a href="#">more</a>
+              <div class="news-content__link">
+                <a href="#">
+                  <span>more</span>
+                  <span class="arrow">
+                    <span></span>
+                  </span>
+                </a>
               </div>
             </div>
           </div>
@@ -368,29 +373,29 @@
       <!-- company -->
       <section class="company section-padding__inline section-padding__block" id="company">
         <div class="inner">
-          <div class="company__title section-title">
+          <div class="company__title section-title" data-aos="fade">
             <h2>
               <span class="company__title__en section-title__en" aria-hidden="true">COMPANY</span>
               <span class="company__title__ja section-title__ja">会社概要</span>
             </h2>
           </div>
-          <div class="company__contents">
-            <div class="company__map" data-aos="fade">
+          <div class="company__contents" data-aos="fade">
+            <div class="company__map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.2365909223377!2d129.8366951751233!3d32.812495682173044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356aad0aefe2a6b9%3A0x13f32e3d4c83018!2z44CSODUyLTgwNjUg6ZW35bSO55yM6ZW35bSO5biC5qiq5bC-77yR5LiB55uu77yV4oiS77yT77yW!5e0!3m2!1sja!2sjp!4v1779812633581!5m2!1sja!2sjp" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="company__textarea">
               <address class="company-address">
-                <div class="company-address__title" data-aos="fade">
+                <div class="company-address__title">
                   <p>株式会社 北村建設興業</p>
                 </div>
-                <div class="company-address__detail" data-aos="fade">
+                <div class="company-address__detail">
                   <p>〒852-8065<br>長崎県長崎市横尾○丁目○-○</p>
                 </div>
-                <div class="company-address__tel-row" data-aos="fade">
+                <div class="company-address__tel-row">
                   <p class="company-address__tel-title">TEL&nbsp;</p>
                   <a href="tel:000-0000-0000" class="company-address__tel">000-000-0000</a>
                 </div>
-                <div class="company-address__email-row" data-aos="fade">
+                <div class="company-address__email-row">
                   <p class="company-address__email-title">Mail　</p>
                   <a href="mailto:info@example.com" class="company-address__email">info@example.com</a>
                 </div>
@@ -400,9 +405,9 @@
         </div>
       </section>
       <!-- contact -->
-      <section class="contact section-theme__color section-padding__inline section-padding__block" id="contact">
+      <section class="contact section-padding__inline section-padding__block" id="contact">
         <div class="inner">
-          <div class="contact__title section-title">
+          <div class="contact__title section-title" data-aos="fade">
             <h2>
               <span class="contact__title__en section-title__en" aria-hidden="true">CONTACT</span>
               <span class="contact__title__ja section-title__ja">お問い合わせ</span>
@@ -411,9 +416,9 @@
           <p class="contact__desc" data-aos="fade">
             ３営業日以内にメールにてご連絡いたします。*は入力必須項目となります。
           </p>
-          <div class="contact__contents">
+          <div class="contact__contents" data-aos="fade">
             <form>
-              <dl class="form__item form-item form-item__name" data-aos="fade">
+              <dl class="form__item form-item form-item__name">
                 <dt class="form__label">
                   <label for="name">お名前 *</label>
                 </dt>
@@ -421,7 +426,7 @@
                   <input type="text" name="name" id="name" placeholder="例：北村太郎" required>
                 </dd>
               </dl>
-              <div class="form__item form-item form-item__gender" data-aos="fade">
+              <div class="form__item form-item form-item__gender">
                 <fieldset>
                   <legend>性別</legend>
                   <div class="form-item__gender__buttons">
@@ -436,7 +441,7 @@
                   </div>
                 </fieldset>
               </div>
-              <dl class="form__item form-item form-item__email" data-aos="fade">
+              <dl class="form__item form-item form-item__email">
                 <dt class="form__label">
                   <label for="email">メールアドレス *</label>
                 </dt>
@@ -444,7 +449,7 @@
                   <input type="email" name="email" id="email" placeholder="例：aaaaaaaa@gmail.com" required>
                 </dd>
               </dl>
-              <div class="form__item form-item form-item__inquiry" data-aos="fade">
+              <div class="form__item form-item form-item__inquiry">
                 <label for="inquiry" class="form-item__inquiry__title">
                   問い合わせ種別
                 </label>
@@ -455,7 +460,7 @@
                   <option value="other">その他</option>
                 </select>
               </div>
-              <dl class="form__item form-item form-item__content" data-aos="fade">
+              <dl class="form__item form-item form-item__content">
                 <dt class="form__label">
                   <label for="content">内容 *</label>
                 </dt>
@@ -463,7 +468,7 @@
                   <textarea name="content" id="content" required></textarea>
                 </dd>
               </dl>
-              <div class="form__item form-item form-item__trigger" data-aos="fade">
+              <div class="form__item form-item form-item__trigger">
                 <fieldset>
                   <legend>何を見て当社HPを知りましたか？<span> (複数回答可)　*</span></legend>
                   <div class="form-item__trigger__checkboxes">
@@ -502,7 +507,7 @@
                   </div>
                 </fieldset>
               </div>
-              <div class="form__item form-item form-item__privacy-policy" data-aos="fade">
+              <div class="form__item form-item form-item__privacy-policy">
                 <h3 class="form__label">個人情報保護方針</h3>
                 <div class="privacy-policy__contents">
                   <div class="privacy-policy__container">
@@ -578,7 +583,7 @@
                   </div>
                 </div>
               </div>
-              <div class="contact__button" data-aos="fade">
+              <div class="contact__button">
                 <input type="submit" value="内容に同意して送信">
               </div>
             </form>
@@ -631,13 +636,9 @@
       <p class="footer__copyright">&copy;Copyright0000　<span>kitamurakensetukogyo</span></p>
     </footer>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
