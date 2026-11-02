@@ -92,7 +92,11 @@
       <!-- page to top -->
       <a href="#top" class="to__top">
         <div class="to__top__icon">
-          <img src="./img/totop/icon-to-top.svg" alt="トップページへ戻る">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/totop/icon-to-top.svg">
+            <img src="./img/totop/icon-to-top_sp.svg" alt="トップページへ戻る">
+          </picture>
+
         </div>
       </a>
       <!-- about -->
@@ -104,7 +108,7 @@
           </picture>
         </div>
         <div class="about__contents">
-          <div class="about__catch" data-aos="fade">
+          <div class="about__catch" data-aos="fade-up">
             <h2>伝統とイマを繋ぐ</h2>
             <div class="about__catch-text">
               <p>古来から伝わる伝統文化<br>
@@ -123,7 +127,7 @@
       <!-- service -->
       <section class="service section-theme__color section-padding__inline section-padding__block" id="service">
         <div class="inner">
-          <div class="service__title section-title" data-aos="fade">
+          <div class="service__title section-title" data-aos="fade-up">
             <h2>
               <span class="about__title__en section-title__en" aria-hidden="true">SERVICE</span>
               <span class="about__title__ja section-title__ja">サービス</span>
@@ -131,7 +135,7 @@
           </div>
           <div class="service__contents">
             <div class="service__items">
-              <div class="service__item service-item" data-aos="fade">
+              <div class="service__item service-item" data-aos="fade-up">
                 <div class="service-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/service/service_01.jpg">
@@ -148,7 +152,7 @@
                   </div>
                 </div>
               </div>
-              <div class="service__item service-item" data-aos="fade">
+              <div class="service__item service-item" data-aos="fade-up">
                 <div class="service-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/service/service_02.jpg">
@@ -165,7 +169,7 @@
                   </div>
                 </div>
               </div>
-              <div class="service__item service-item" data-aos="fade">
+              <div class="service__item service-item" data-aos="fade-up">
                 <div class="service-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/service/service_03.jpg">
@@ -189,7 +193,7 @@
       <!-- works -->
       <section class="works section-padding__inline section-padding__block" id="works">
         <div class="inner">
-          <div class="works__title section-title" data-aos="fade">
+          <div class="works__title section-title" data-aos="fade-up">
             <h2>
               <span class="works__title__en section-title__en" aria-hidden="true">WORKS</span>
               <span class="works__title__ja section-title__ja">施工事例</span>
@@ -197,7 +201,7 @@
           </div>
           <div class="works__contents">
             <div class="works__items">
-              <div class="works__item works-item modal-open" data-modal="modal-01" data-aos="fade">
+              <div class="works__item works-item modal-open" data-modal="modal-01" data-aos="fade-up">
                 <div class="works-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/works/works_01.jpg">
@@ -208,7 +212,7 @@
                   <p>【新築】<br class="pc">長崎県T.O様自宅</p>
                 </div>
               </div>
-              <div class="works__item works-item modal-open" data-modal="modal-02" data-aos="fade">
+              <div class="works__item works-item modal-open" data-modal="modal-02" data-aos="fade-up">
                 <div class="works-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/works/works_02.jpg">
@@ -219,7 +223,7 @@
                   <p>【リノベーション】<br>京都府カトリック丹波教会</p>
                 </div>
               </div>
-              <div class="works__item works-item modal-open" data-modal="modal-03" data-aos="fade">
+              <div class="works__item works-item modal-open" data-modal="modal-03" data-aos="fade-up">
                 <div class="works-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/works/works_03.jpg">
@@ -230,7 +234,7 @@
                   <p>【新築】<br>東京都A.F様自宅兼事務所</p>
                 </div>
               </div>
-              <div class="works__item works-item modal-open" data-modal="modal-04" data-aos="fade">
+              <div class="works__item works-item modal-open" data-modal="modal-04" data-aos="fade-up">
                 <div class="works-item__image">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/works/works_04.jpg">
@@ -294,14 +298,14 @@
       <!-- news -->
       <section class="news section-theme__color section-padding__inline section-padding__block" id="news">
         <div class="inner">
-          <div class="news__title section-title" data-aos="fade">
+          <div class="news__title section-title" data-aos="fade-up">
             <h2>
               <span class="news__title__en section-title__en" aria-hidden="true">NEWS</span>
               <span class="news__title__ja section-title__ja">お知らせ</span>
             </h2>
           </div>
           <div class="news__contents">
-            <div class="news__content news-content" data-aos="fade">
+            <div class="news__content news-content" data-aos="fade-up">
               <div class="news-content__title">
                 <h3>お知らせ</h3>
               </div>
@@ -334,7 +338,7 @@
                 </a>
               </div>
             </div>
-            <div class="news__content news-content" data-aos="fade">
+            <div class="news__content news-content" data-aos="fade-up">
               <div class="news-content__title">
                 <h3>ブログ</h3>
               </div>
@@ -373,13 +377,13 @@
       <!-- company -->
       <section class="company section-padding__inline section-padding__block" id="company">
         <div class="inner">
-          <div class="company__title section-title" data-aos="fade">
+          <div class="company__title section-title" data-aos="fade-up">
             <h2>
               <span class="company__title__en section-title__en" aria-hidden="true">COMPANY</span>
               <span class="company__title__ja section-title__ja">会社概要</span>
             </h2>
           </div>
-          <div class="company__contents" data-aos="fade">
+          <div class="company__contents" data-aos="fade-up">
             <div class="company__map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.2365909223377!2d129.8366951751233!3d32.812495682173044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356aad0aefe2a6b9%3A0x13f32e3d4c83018!2z44CSODUyLTgwNjUg6ZW35bSO55yM6ZW35bSO5biC5qiq5bC-77yR5LiB55uu77yV4oiS77yT77yW!5e0!3m2!1sja!2sjp!4v1779812633581!5m2!1sja!2sjp" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -407,16 +411,16 @@
       <!-- contact -->
       <section class="contact section-padding__inline section-padding__block" id="contact">
         <div class="inner">
-          <div class="contact__title section-title" data-aos="fade">
+          <div class="contact__title section-title" data-aos="fade-up">
             <h2>
               <span class="contact__title__en section-title__en" aria-hidden="true">CONTACT</span>
               <span class="contact__title__ja section-title__ja">お問い合わせ</span>
             </h2>
           </div>
-          <p class="contact__desc" data-aos="fade">
+          <p class="contact__desc" data-aos="fade-up">
             ３営業日以内にメールにてご連絡いたします。*は入力必須項目となります。
           </p>
-          <div class="contact__contents" data-aos="fade">
+          <div class="contact__contents" data-aos="fade-up">
             <form>
               <dl class="form__item form-item form-item__name">
                 <dt class="form__label">
@@ -584,7 +588,7 @@
                 </div>
               </div>
               <div class="contact__button">
-                <input type="submit" value="内容に同意して送信">
+                <button type="submit"><span>内容に同意して送信</span></button>
               </div>
             </form>
           </div>

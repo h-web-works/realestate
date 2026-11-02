@@ -56,5 +56,8 @@ $(".works-modal").click(function(event) {
 });
 
 AOS.init({
+  duration: 1000,
+  delay: 100,
+  easing: "ease-out",
   once: true,
 });
