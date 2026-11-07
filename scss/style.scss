@@ -25,6 +25,11 @@ html {
   font-size: 10px;
   scroll-padding-top: 8rem;
 }
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 5rem;
+  }
+}
 
 body {
   font-family: var(--font-yu-mincho);
@@ -640,13 +645,7 @@ works
 }
 
 .works-item {
-  width: calc(200 / 920 * 100%);
   cursor: pointer;
-}
-@media (max-width: 767px) {
-  .works-item {
-    width: 100%;
-  }
 }
 
 .works-item__textarea {
@@ -782,6 +781,7 @@ news
 }
 
 .news-content__lineup {
+  border-bottom: 0.1rem solid var(--theme-color);
 
   a {
     display: flex;
@@ -789,7 +789,6 @@ news
     color: var(--black-color);
 
     padding: 1.3rem 0 1.2rem 0;
-    border-bottom: 0.1rem solid var(--theme-color);
 
     time {
       font-size: 1.6rem;
@@ -829,7 +828,7 @@ news
 }
 
 .news-content__link {
-  padding: 2.4rem 2rem 2.5rem;
+  padding: 2.4rem 2rem 2rem;
   background: var(--white-color);
   position: relative;
   display: flex;
@@ -844,6 +843,7 @@ news
     line-height: calc(33 / 20);
     position: relative;
     width: 8rem;
+    height: 3rem;
     transition: transform 0.4s ease;
 
     span {
@@ -855,7 +855,7 @@ news
       height: 0.1rem;
       background: var(--theme-color);
       position: absolute;
-      bottom: 0.4rem;
+      bottom: 0.7rem;
       left: 0;
       span {
         display: block;
@@ -875,7 +875,7 @@ news
         background: var(--theme-color);
         position: absolute;
         top: -1.2rem;
-        right: 1.2rem;
+        right: 1.1rem;
       }
     }
   }
@@ -887,11 +887,6 @@ news
         transform: translateX(1rem);
       }
     }
-  }
-}
-@media (max-width: 767px) {
-  .news-content__link {
-    padding-bottom: 2.5rem;
   }
 }
 
@@ -1415,10 +1410,6 @@ input[type="checkbox"] {
     place-content: center;
     cursor: pointer;
     transition: background-color 0.4s, color 0.4s;
-
-    span {
-      transform: translateY(-0.1rem);
-    }
   }
 }
 @media (min-width: 768px) and (any-hover: hover) {

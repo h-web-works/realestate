@@ -26,6 +26,11 @@ html {
   scroll-padding-top: 8rem;
 }
 
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 5rem;
+  }
+}
 body {
   font-family: var(--font-yu-mincho);
   color: var(--black-color);
@@ -676,15 +681,9 @@ works
   }
 }
 .works-item {
-  width: 21.7391304348%;
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
-  .works-item {
-    width: 100%;
-  }
-}
 .works-item__textarea {
   margin-top: 1.9rem;
 }
@@ -828,6 +827,9 @@ news
   padding-inline: 2rem;
 }
 
+.news-content__lineup {
+  border-bottom: 0.1rem solid var(--theme-color);
+}
 .news-content__lineup a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -837,7 +839,6 @@ news
           column-gap: 16.6666666667%;
   color: var(--black-color);
   padding: 1.3rem 0 1.2rem 0;
-  border-bottom: 0.1rem solid var(--theme-color);
 }
 .news-content__lineup a time {
   font-size: 1.6rem;
@@ -878,7 +879,7 @@ news
   }
 }
 .news-content__link {
-  padding: 2.4rem 2rem 2.5rem;
+  padding: 2.4rem 2rem 2rem;
   background: var(--white-color);
   position: relative;
   display: -webkit-box;
@@ -897,6 +898,7 @@ news
   line-height: 1.65;
   position: relative;
   width: 8rem;
+  height: 3rem;
   -webkit-transition: -webkit-transform 0.4s ease;
   transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
@@ -910,7 +912,7 @@ news
   height: 0.1rem;
   background: var(--theme-color);
   position: absolute;
-  bottom: 0.4rem;
+  bottom: 0.7rem;
   left: 0;
 }
 .news-content__link a .arrow span {
@@ -933,18 +935,13 @@ news
   background: var(--theme-color);
   position: absolute;
   top: -1.2rem;
-  right: 1.2rem;
+  right: 1.1rem;
 }
 
 @media (min-width: 768px) and (any-hover: hover) {
   .news-content__link a:hover {
     -webkit-transform: translateX(1rem);
             transform: translateX(1rem);
-  }
-}
-@media (max-width: 767px) {
-  .news-content__link {
-    padding-bottom: 2.5rem;
   }
 }
 /* ----------
@@ -1509,10 +1506,6 @@ input[type=checkbox]:checked::after {
   cursor: pointer;
   -webkit-transition: background-color 0.4s, color 0.4s;
   transition: background-color 0.4s, color 0.4s;
-}
-.contact__button button span {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
 }
 
 @media (min-width: 768px) and (any-hover: hover) {
