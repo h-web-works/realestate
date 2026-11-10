@@ -1406,8 +1406,9 @@ input[type="checkbox"] {
     border: 0.1rem solid var(--theme-color);
     font-size: 2rem;
     font-weight: 600;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    padding-block: 0.8rem 0.7rem;
     cursor: pointer;
     transition: background-color 0.4s, color 0.4s;
   }
