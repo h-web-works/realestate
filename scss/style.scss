@@ -1097,6 +1097,8 @@ legend {
   background: var(--white-color);
 
   input {
+    width: 100%;
+
     &::placeholder {
       color: var(--placeholder-color);
     }

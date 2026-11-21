@@ -1168,6 +1168,9 @@ legend span {
   line-height: 1.3888888889;
   background: var(--white-color);
 }
+.form__input input {
+  width: 100%;
+}
 .form__input input::-webkit-input-placeholder {
   color: var(--placeholder-color);
 }
